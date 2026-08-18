@@ -146,8 +146,16 @@
     $$('.quote', qv).forEach(function (el, n) { el.classList.toggle('is-on', n === qIdx); });
     $$('button', qn).forEach(function (el, n) { el.classList.toggle('is-on', n === qIdx); });
   }
+  function sizeQuotes() {
+    if (!qv || !window.matchMedia('(min-width:961px)').matches) { if (qv) qv.style.minHeight = ''; return; }
+    var h = 0;
+    $$('.quote', qv).forEach(function (el) { h = Math.max(h, el.scrollHeight); });
+    if (h) qv.style.minHeight = (h + 2) + 'px';
+  }
   if (qv) {
     buildQuotes();
+    sizeQuotes();
+    window.addEventListener('resize', sizeQuotes);
     qn.addEventListener('click', function (e) {
       var b = e.target.closest('[data-q]'); if (!b) return;
       showQuote(+b.dataset.q); restartQ();
@@ -289,7 +297,7 @@
 
   /* ---------- language change hooks ---------- */
   T.onChange(function () {
-    buildMarquee(); paintTicker(); buildNet(); buildQuotes(); buildRail(); updateRail();
+    buildMarquee(); paintTicker(); buildNet(); buildQuotes(); sizeQuotes(); buildRail(); updateRail();
     if (window.ZD_APPLY_CONTACT) window.ZD_APPLY_CONTACT();
   });
   window.ZD_CONTENT_READY.then(function () {
