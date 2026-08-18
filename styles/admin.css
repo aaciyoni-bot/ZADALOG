@@ -11,7 +11,9 @@ body.admin{ background:var(--bg); min-height:100vh; }
   display:flex; flex-direction:column; gap:16px;
   box-shadow:0 40px 90px rgba(0,0,0,.5);
 }
-.gate__mark{ width:48px; height:48px; }
+.gate__wordmark{ font-weight:800; font-size:30px; letter-spacing:.16em; direction:ltr; unicode-bidi:isolate; text-align:right; }
+.gate__wordmark em, .abar__wordmark em{ font-style:normal; color:var(--orange); }
+.abar__wordmark{ font-weight:800; font-size:19px; letter-spacing:.14em; direction:ltr; unicode-bidi:isolate; }
 .gate__box h1{ font-size:22px; font-weight:700; }
 .gate__sub{ font-size:14px; color:var(--ink-3); margin-block-start:-10px; }
 .gate__msg{ font-size:13px; min-height:19px; color:var(--orange-2); line-height:1.5; }
