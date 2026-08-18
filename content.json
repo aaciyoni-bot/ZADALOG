@@ -1,0 +1,64 @@
+{
+  "updatedAt": "",
+  "updatedBy": "",
+  "contact": {
+    "phoneDisplay": "050-609-5528",
+    "phoneHref": "+972506095528",
+    "whatsapp": "972506095528",
+    "email": "info@zadalog.com",
+    "addressHe": "אשדוד, ישראל",
+    "addressEn": "Ashdod, Israel",
+    "hoursHe": "א׳–ה׳ 08:00–18:00",
+    "hoursEn": "Sun–Thu 08:00–18:00"
+  },
+  "stats": [
+    { "key": "stat1", "value": 2400, "suffix": "+" },
+    { "key": "stat2", "value": 60,   "suffix": "+" },
+    { "key": "stat3", "value": 4,    "suffix": "h" },
+    { "key": "stat4", "value": 98,   "suffix": "%" }
+  ],
+  "jobs": [
+    {
+      "id": "unloader",
+      "open": true,
+      "titleHe": "עובד/ת פריקת מכולות",
+      "titleEn": "Container unloading crew",
+      "locationHe": "אשדוד",
+      "locationEn": "Ashdod",
+      "typeHe": "משרה מלאה",
+      "typeEn": "Full time",
+      "descHe": "פריקת מכולות במחסני לקוחות, ספירה מול רשימת אריזה, מיון לפלטות ותיעוד מצולם. עבודה בצוות קבוע עם ציוד שינוע מסודר.",
+      "descEn": "Unloading containers at customer warehouses, counting against the packing list, palletising and photo documentation. Permanent crew, proper handling equipment.",
+      "reqHe": ["כושר גופני ונכונות לעבודה פיזית", "אמינות ודייקנות בשעות", "רישיון מלגזה — יתרון", "עברית ברמה טובה"],
+      "reqEn": ["Physically fit and ready for hands-on work", "Reliable and punctual", "Forklift licence — an advantage", "Good Hebrew"]
+    },
+    {
+      "id": "ops",
+      "open": true,
+      "titleHe": "רכז/ת תפעול שילוח בינלאומי",
+      "titleEn": "Freight operations coordinator",
+      "locationHe": "אשדוד · היברידי",
+      "locationEn": "Ashdod · hybrid",
+      "typeHe": "משרה מלאה",
+      "typeEn": "Full time",
+      "descHe": "ניהול תיקי משלוח מקצה לקצה — הזמנת שטח מול חברות הספנות, מסמכי מטען, תיאום מול סוכנים בחו״ל ועדכון שוטף ללקוחות.",
+      "descEn": "Owning shipment files end to end — booking space with carriers, cargo documents, coordinating overseas agents and keeping customers updated.",
+      "reqHe": ["ניסיון בשילוח בינלאומי או עמילות מכס — חובה", "אנגלית ברמה גבוהה", "שליטה במערכות ממוחשבות", "ראש גדול ויכולת עבודה תחת עומס"],
+      "reqEn": ["Experience in freight forwarding or customs brokerage — required", "Strong English", "Comfortable with operational systems", "Takes ownership, works well under pressure"]
+    },
+    {
+      "id": "driver",
+      "open": true,
+      "titleHe": "נהג/ת מוביל מכולות (רישיון כבד)",
+      "titleEn": "Container haulage driver (heavy licence)",
+      "locationHe": "מרכז ודרום",
+      "locationEn": "Central & southern Israel",
+      "typeHe": "משרה מלאה",
+      "typeEn": "Full time",
+      "descHe": "הובלת מכולות מהנמל למחסני לקוחות ובחזרה, בתיאום עם צוותי הפריקה שלנו.",
+      "descEn": "Hauling containers from the port to customer warehouses and back, coordinated with our unloading crews.",
+      "reqHe": ["רישיון נהיגה כבד בתוקף", "ניסיון בהובלת מכולות — יתרון", "היכרות עם נמלי אשדוד וחיפה — יתרון"],
+      "reqEn": ["Valid heavy vehicle licence", "Container haulage experience — an advantage", "Familiar with Ashdod and Haifa ports — an advantage"]
+    }
+  ]
+}

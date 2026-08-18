@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZADALOG — בק אופיס</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/styles/admin.css">
+</head>
+<body class="admin">
+
+<!-- ---------- login ---------- -->
+<div class="gate" id="gate">
+  <form class="gate__box" id="loginForm" autocomplete="on">
+    <svg class="gate__mark" viewBox="0 0 44 44" aria-hidden="true">
+      <rect x="1" y="1" width="42" height="42" rx="13" fill="#0C1826" stroke="rgba(255,255,255,.14)"/>
+      <path d="M13 14.5H30.5L13.5 29.5H31" fill="none" stroke="#FF6B2C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="13" cy="14.5" r="3.1" fill="#21D4C4"/><circle cx="31" cy="29.5" r="3.1" fill="#FF6B2C"/>
+    </svg>
+    <h1>בק אופיס ZADALOG</h1>
+    <p class="gate__sub">התחברו כדי לעדכן פרטי קשר, נתונים ומשרות.</p>
+
+    <label class="field"><span>שם משתמש</span>
+      <input id="gUser" name="username" autocomplete="username" required></label>
+    <label class="field"><span>סיסמה</span>
+      <input id="gPass" name="password" type="password" autocomplete="current-password" required></label>
+
+    <button class="btn btn--primary btn--full" type="submit" id="gBtn">כניסה</button>
+    <div class="gate__msg" id="gMsg" role="status"></div>
+    <a class="gate__back" href="/">← חזרה לאתר</a>
+  </form>
+</div>
+
+<!-- ---------- console ---------- -->
+<div class="console" id="console" hidden>
+  <header class="abar">
+    <div class="abar__brand">
+      <svg viewBox="0 0 44 44" width="30" height="30" aria-hidden="true">
+        <rect x="1" y="1" width="42" height="42" rx="13" fill="#0C1826" stroke="rgba(255,255,255,.14)"/>
+        <path d="M13 14.5H30.5L13.5 29.5H31" fill="none" stroke="#FF6B2C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="13" cy="14.5" r="3.1" fill="#21D4C4"/><circle cx="31" cy="29.5" r="3.1" fill="#FF6B2C"/>
+      </svg>
+      <b>בק אופיס</b>
+      <span class="abar__who" id="aWho"></span>
+    </div>
+    <div class="abar__actions">
+      <span class="abar__dirty" id="aDirty" hidden>יש שינויים שלא פורסמו</span>
+      <a class="btn btn--ghost btn--sm" href="/" target="_blank" rel="noopener">צפייה באתר</a>
+      <button class="btn btn--ghost btn--sm" type="button" id="aDownload">הורדת JSON</button>
+      <button class="btn btn--primary btn--sm" type="button" id="aPublish">פרסום</button>
+      <button class="btn btn--ghost btn--sm" type="button" id="aLogout">יציאה</button>
+    </div>
+  </header>
+
+  <div class="anote" id="aNote" hidden></div>
+
+  <nav class="atabs">
+    <button class="atab is-on" type="button" data-tab="contact">פרטי קשר</button>
+    <button class="atab" type="button" data-tab="stats">נתוני כותרת</button>
+    <button class="atab" type="button" data-tab="jobs">דרושים</button>
+  </nav>
+
+  <main class="apanels">
+    <!-- contact -->
+    <section class="apanel is-on" data-panel="contact">
+      <h2>פרטי קשר</h2>
+      <p class="ahint">משתנים בכל מקום באתר בבת אחת — כותרת, כפתור וואטסאפ, פוטר וטפסים.</p>
+      <div class="agrid">
+        <label class="field"><span>טלפון (תצוגה)</span><input id="cPhoneDisplay" dir="ltr"></label>
+        <label class="field"><span>טלפון (חיוג, פורמט בינלאומי)</span><input id="cPhoneHref" dir="ltr" placeholder="+972506095528"></label>
+        <label class="field"><span>וואטסאפ (ספרות בלבד)</span><input id="cWhatsapp" dir="ltr" placeholder="972506095528"></label>
+        <label class="field"><span>אימייל</span><input id="cEmail" dir="ltr" type="email"></label>
+        <label class="field"><span>כתובת (עברית)</span><input id="cAddressHe"></label>
+        <label class="field"><span>כתובת (אנגלית)</span><input id="cAddressEn" dir="ltr"></label>
+        <label class="field"><span>שעות (עברית)</span><input id="cHoursHe"></label>
+        <label class="field"><span>שעות (אנגלית)</span><input id="cHoursEn" dir="ltr"></label>
+      </div>
+    </section>
+
+    <!-- stats -->
+    <section class="apanel" data-panel="stats">
+      <h2>נתוני כותרת</h2>
+      <p class="ahint">ארבעת המספרים שרצים מתחת לכותרת הראשית. הכיתוב עצמו (״מכולות בשנה״) נמצא בקוד — המספר והסיומת כאן.</p>
+      <div class="astats" id="aStats"></div>
+    </section>
+
+    <!-- jobs -->
+    <section class="apanel" data-panel="jobs">
+      <div class="apanel__head">
+        <div>
+          <h2>משרות פתוחות</h2>
+          <p class="ahint">משרה שמסומנת ״סגורה״ נעלמת מהאתר אבל נשמרת כאן להפעלה מחדש.</p>
+        </div>
+        <button class="btn btn--ghost btn--sm" type="button" id="aAddJob">+ משרה חדשה</button>
+      </div>
+      <div class="ajobs" id="aJobs"></div>
+    </section>
+  </main>
+</div>
+
+<script src="/scripts/admin.js"></script>
+</body>
+</html>
