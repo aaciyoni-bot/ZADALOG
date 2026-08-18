@@ -71,39 +71,6 @@
   }
   buildMarquee();
 
-  /* ---------- live ops ticker ---------- */
-  var tickList = document.getElementById('tickerList');
-  var tickState = [];
-  function randCode() {
-    var L = 'ABCDEFGHJKLMNPRSTUVWXZ';
-    return L[(Math.random()*22)|0] + L[(Math.random()*22)|0] + L[(Math.random()*22)|0] +
-           'U ' + (100000 + ((Math.random()*899999)|0));
-  }
-  function tickTime(offsetMin) {
-    var d = new Date(Date.now() - offsetMin * 60000);
-    return ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2);
-  }
-  function pushTick(initial) {
-    var ev = ZD.TICKER[(Math.random() * ZD.TICKER.length) | 0];
-    tickState.unshift({ code: randCode(), ev: ev, min: initial ? (Math.random()*90)|0 : 0 });
-    if (tickState.length > 6) tickState.pop();
-    paintTicker();
-  }
-  function paintTicker() {
-    if (!tickList) return;
-    tickList.innerHTML = tickState.map(function (r) {
-      return '<li><span class="t-code">' + r.code + '</span>' +
-             '<span class="t-txt">' + (T.lang === 'he' ? r.ev.he : r.ev.en) + '</span>' +
-             '<span class="t-time">' + tickTime(r.min) + '</span></li>';
-    }).join('');
-  }
-  if (tickList) {
-    for (var i = 0; i < 6; i++) pushTick(true);
-    tickState.sort(function (a, b) { return a.min - b.min; });
-    paintTicker();
-    if (!reduced) setInterval(function () { pushTick(false); }, 3000);
-  }
-
   /* ---------- network table ---------- */
   function buildNet() {
     var body = document.getElementById('netBody'); if (!body) return;
@@ -297,7 +264,7 @@
 
   /* ---------- language change hooks ---------- */
   T.onChange(function () {
-    buildMarquee(); paintTicker(); buildNet(); buildQuotes(); sizeQuotes(); buildRail(); updateRail();
+    buildMarquee(); buildNet(); buildQuotes(); sizeQuotes(); buildRail(); updateRail();
     if (window.ZD_APPLY_CONTACT) window.ZD_APPLY_CONTACT();
   });
   window.ZD_CONTENT_READY.then(function () {
