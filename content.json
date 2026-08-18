@@ -12,25 +12,55 @@
     "hoursEn": "Sun–Thu 08:00–18:00"
   },
   "stats": [
-    { "key": "stat1", "value": 2400, "suffix": "+" },
-    { "key": "stat2", "value": 60,   "suffix": "+" },
-    { "key": "stat3", "value": 4,    "suffix": "h" },
-    { "key": "stat4", "value": 98,   "suffix": "%" }
+    {
+      "key": "stat1",
+      "value": 2400,
+      "suffix": "+"
+    },
+    {
+      "key": "stat2",
+      "value": 60,
+      "suffix": "+"
+    },
+    {
+      "key": "stat3",
+      "value": 4,
+      "suffix": "h"
+    },
+    {
+      "key": "stat4",
+      "value": 98,
+      "suffix": "%"
+    }
   ],
   "jobs": [
     {
-      "id": "unloader",
+      "id": "unloader-hartuv",
       "open": true,
-      "titleHe": "עובד/ת פריקת מכולות",
-      "titleEn": "Container unloading crew",
-      "locationHe": "אשדוד",
-      "locationEn": "Ashdod",
-      "typeHe": "משרה מלאה",
-      "typeEn": "Full time",
-      "descHe": "פריקת מכולות במחסני לקוחות, ספירה מול רשימת אריזה, מיון לפלטות ותיעוד מצולם. עבודה בצוות קבוע עם ציוד שינוע מסודר.",
-      "descEn": "Unloading containers at customer warehouses, counting against the packing list, palletising and photo documentation. Permanent crew, proper handling equipment.",
-      "reqHe": ["כושר גופני ונכונות לעבודה פיזית", "אמינות ודייקנות בשעות", "רישיון מלגזה — יתרון", "עברית ברמה טובה"],
-      "reqEn": ["Physically fit and ready for hands-on work", "Reliable and punctual", "Forklift licence — an advantage", "Good Hebrew"]
+      "hot": true,
+      "wa": true,
+      "titleHe": "עובדי פריקת מכולות — קבועים וזמניים",
+      "titleEn": "Container unloading crew — permanent & temporary",
+      "locationHe": "אזור תעשייה הר טוב",
+      "locationEn": "Har Tuv Industrial Zone",
+      "typeHe": "משרה מלאה · שכר גבוה",
+      "typeEn": "Full time · high pay",
+      "descHe": "לחברת שירותי לוגיסטיקה דרושים עובדים קבועים וזמניים לפריקת מכולות באזור תעשייה הר טוב. עבודה בצוות חזק ומגובש, עם שכר גבוה למי שבא לעבוד ברצינות ולהרוויח טוב. יום העבודה מ‑8:00 עד סביבות 17:00, בהתאם לכמות המכולות שמגיעות.",
+      "descEn": "A logistics services company is hiring permanent and temporary workers for container unloading at the Har Tuv Industrial Zone. A strong, tight crew with high pay for people who come to work seriously and earn well. Workday from 8:00 until around 17:00, depending on container volume.",
+      "reqHe": [
+        "רצינות ומחויבות — מגיעים בזמן, נשארים עד הסוף",
+        "כושר גופני מתאים לעבודה פיזית",
+        "עברית — חובה",
+        "ניסיון בפריקה או במחסן — יתרון",
+        "יש איסופים מירושלים ומבית שמש"
+      ],
+      "reqEn": [
+        "Serious and committed — on time, stays to the end",
+        "Physically fit for hands-on work",
+        "Hebrew — required",
+        "Unloading or warehouse experience — an advantage",
+        "Pickups available from Jerusalem and Beit Shemesh"
+      ]
     },
     {
       "id": "ops",
@@ -43,8 +73,18 @@
       "typeEn": "Full time",
       "descHe": "ניהול תיקי משלוח מקצה לקצה — הזמנת שטח מול חברות הספנות, מסמכי מטען, תיאום מול סוכנים בחו״ל ועדכון שוטף ללקוחות.",
       "descEn": "Owning shipment files end to end — booking space with carriers, cargo documents, coordinating overseas agents and keeping customers updated.",
-      "reqHe": ["ניסיון בשילוח בינלאומי או עמילות מכס — חובה", "אנגלית ברמה גבוהה", "שליטה במערכות ממוחשבות", "ראש גדול ויכולת עבודה תחת עומס"],
-      "reqEn": ["Experience in freight forwarding or customs brokerage — required", "Strong English", "Comfortable with operational systems", "Takes ownership, works well under pressure"]
+      "reqHe": [
+        "ניסיון בשילוח בינלאומי או עמילות מכס — חובה",
+        "אנגלית ברמה גבוהה",
+        "שליטה במערכות ממוחשבות",
+        "ראש גדול ויכולת עבודה תחת עומס"
+      ],
+      "reqEn": [
+        "Experience in freight forwarding or customs brokerage — required",
+        "Strong English",
+        "Comfortable with operational systems",
+        "Takes ownership, works well under pressure"
+      ]
     },
     {
       "id": "driver",
@@ -57,8 +97,16 @@
       "typeEn": "Full time",
       "descHe": "הובלת מכולות מהנמל למחסני לקוחות ובחזרה, בתיאום עם צוותי הפריקה שלנו.",
       "descEn": "Hauling containers from the port to customer warehouses and back, coordinated with our unloading crews.",
-      "reqHe": ["רישיון נהיגה כבד בתוקף", "ניסיון בהובלת מכולות — יתרון", "היכרות עם נמלי אשדוד וחיפה — יתרון"],
-      "reqEn": ["Valid heavy vehicle licence", "Container haulage experience — an advantage", "Familiar with Ashdod and Haifa ports — an advantage"]
+      "reqHe": [
+        "רישיון נהיגה כבד בתוקף",
+        "ניסיון בהובלת מכולות — יתרון",
+        "היכרות עם נמלי אשדוד וחיפה — יתרון"
+      ],
+      "reqEn": [
+        "Valid heavy vehicle licence",
+        "Container haulage experience — an advantage",
+        "Familiar with Ashdod and Haifa ports — an advantage"
+      ]
     }
   ]
 }

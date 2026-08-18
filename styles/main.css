@@ -849,6 +849,14 @@ input::placeholder,textarea::placeholder{ color:var(--ink-3); opacity:.6; }
 .job__req{ display:flex; flex-direction:column; gap:8px; margin-block:18px 22px; }
 .job__req li{ font-size:13.5px; color:var(--ink-3); display:flex; align-items:flex-start; gap:10px; }
 .job__req li::before{ content:''; width:4px; height:4px; border-radius:50%; background:var(--teal); flex-shrink:0; margin-block-start:8px; }
+.job__tag--hot{
+  color:#0F2B12; background:#3BE07A; border-color:#3BE07A; font-weight:700;
+  animation:hotPulse 2.6s infinite;
+}
+@keyframes hotPulse{ 0%,100%{ box-shadow:0 0 0 0 rgba(59,224,122,.45); } 50%{ box-shadow:0 0 0 6px rgba(59,224,122,0); } }
+@media (prefers-reduced-motion:reduce){ .job__tag--hot{ animation:none; } }
+.job__wa{ background:linear-gradient(135deg,#2BC65A,#25D366); color:#06280F; box-shadow:0 8px 26px rgba(37,211,102,.3); }
+.job__wa:hover{ box-shadow:0 14px 34px rgba(37,211,102,.42); }
 .jobs__empty{ color:var(--ink-3); font-size:15px; padding:28px 4px; }
 .jobs__cta{
   display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;
