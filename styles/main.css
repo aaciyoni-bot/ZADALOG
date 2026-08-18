@@ -142,7 +142,7 @@ code{ font-family:var(--f-mono); font-size:.9em; background:rgba(33,212,196,.12)
 .brand__mark{ width:40px; height:40px; }
 .brand__text{ display:flex; flex-direction:column; line-height:1.05; }
 .brand__name{ font-weight:800; font-size:19px; letter-spacing:.14em; }
-.brand__tag{ font-size:10px; letter-spacing:.14em; color:var(--ink-3); text-transform:uppercase; }
+.brand__tag{ font-size:10px; letter-spacing:.08em; color:var(--ink-3); text-transform:uppercase; white-space:nowrap; }
 
 .nav__links{ display:flex; gap:26px; margin-inline:auto; }
 .nav__links a{

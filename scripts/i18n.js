@@ -4,7 +4,7 @@ window.I18N = (function () {
 
   var HE = {
     skip: 'דילוג לתוכן',
-    brandTag: 'לוגיסטיקה בינלאומית',
+    brandTag: 'מ. זדה שרותים לוגיסטיים',
     navServices: 'שירותים', navPlanner: 'מחשבון מכולה', navTrack: 'מעקב משלוח',
     navProcess: 'איך זה עובד', navNetwork: 'הרשת שלנו', navCta: 'קבלו הצעה',
 
@@ -130,7 +130,7 @@ window.I18N = (function () {
 
   var EN = {
     skip: 'Skip to content',
-    brandTag: 'International logistics',
+    brandTag: 'M. Zada Logistics Services',
     navServices: 'Services', navPlanner: 'Container planner', navTrack: 'Track',
     navProcess: 'How it works', navNetwork: 'Network', navCta: 'Get a quote',
 
