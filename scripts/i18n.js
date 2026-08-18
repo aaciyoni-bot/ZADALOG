@@ -124,6 +124,7 @@ window.I18N = (function () {
     jbSpecT: 'לא מצאתם משרה מתאימה?',
     jbSpecD: 'שלחו קורות חיים בכל מקרה. אנחנו גדלים, והתפקידים נפתחים לפי אנשים לא פחות מלפי צורך.',
     jbSpecBtn: 'שליחת קורות חיים',
+    footA11y: 'הצהרת נגישות',
     footLine: 'מכולה נפרקת. שרשרת נשמרת.',
     footSvc: 'שירותים', footTools: 'כלים', footContact: 'יצירת קשר', footRights: 'כל הזכויות שמורות',
 
@@ -252,6 +253,7 @@ window.I18N = (function () {
     jbSpecT: 'Nothing that fits?',
     jbSpecD: 'Send your CV anyway. We are growing, and roles open around good people as often as around need.',
     jbSpecBtn: 'Send your CV',
+    footA11y: 'Accessibility statement',
     footLine: 'Container unloaded. Chain unbroken.',
     footSvc: 'Services', footTools: 'Tools', footContact: 'Contact', footRights: 'All rights reserved',
 
